@@ -1,1 +1,10 @@
-const t=document.getElementById('theme');t.onclick=()=>{document.body.classList.toggle('light');t.textContent=document.body.classList.contains('light')?'☀':'☾'};
+const button = document.getElementById("theme");
+
+button.addEventListener("click", () => {
+  document.body.classList.toggle("light");
+
+  button.textContent =
+    document.body.classList.contains("light")
+      ? "☀"
+      : "☾";
+});
